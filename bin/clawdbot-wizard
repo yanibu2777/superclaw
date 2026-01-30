@@ -2,7 +2,7 @@
 
 const { Command } = require('commander');
 const chalk = require('chalk');
-const { runWizard } = require('./wizard');
+const { runWizard } = require('../lib/wizard');
 const { version } = require('../package.json');
 
 const program = new Command();

@@ -2,15 +2,15 @@
   "name": "clawdbot-onboarding-wizard",
   "version": "1.0.0",
   "description": "Transform from 'I downloaded Clawdbot, now what?' to productive AI employee in 5 minutes",
-  "main": "cli/index.js",
+  "main": "lib/wizard.js",
   "bin": {
-    "clawdbot-onboarding-wizard": "./cli/index.js",
-    "clawdbot-wizard": "./cli/index.js"
+    "clawdbot-onboarding-wizard": "./bin/clawdbot-wizard",
+    "clawdbot-wizard": "./bin/clawdbot-wizard"
   },
   "scripts": {
-    "test": "node tests/test-wizard.js",
-    "start": "node cli/index.js init",
-    "test-mode": "node cli/index.js test",
+    "test": "node examples/tests/test-wizard.js",
+    "start": "node bin/clawdbot-wizard",
+    "demo": "node examples/demo/demo-run.js",
     "lint": "echo 'Linting...'",
     "dev": "node cli/index.js"
   },
