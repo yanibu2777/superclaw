@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const { runWizard } = require('../cli/wizard');
-const { loadTemplate } = require('../cli/templates');
-const { generateSetup } = require('../cli/setup');
+const { runWizard } = require('../../lib/wizard');
+const { loadTemplate } = require('../../lib/templates');
+const { generateSetup } = require('../../lib/setup');
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -127,8 +127,8 @@ async function runTests() {
     console.log('   ✅ Configuration generation working');
     
     console.log('\n🚀 Ready for real usage! Try:');
-    console.log('   npm run start');
-    console.log('   or: node cli/index.js init');
+    console.log('   npm start');
+    console.log('   or: ./bin/clawdbot-wizard');
     
     return true;
     
